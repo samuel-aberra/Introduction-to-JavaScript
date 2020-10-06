@@ -17,9 +17,12 @@ Do the following:
 
    HINT: no function required
 */
+const votingAge = 18
 
-
-
+if (votingAge > 18) {
+ console.log(true);
+}
+console.log (votingAge);
 /*
 Task 1b - Values
 
@@ -30,10 +33,17 @@ Do the following:
 
    HINT: no function required
 */
-
-
-
-
+function condition(mood){
+  let happy = "We are happy";
+  let sad = "We are sad";
+  if(mood < 10) {
+    return(happy)
+  }
+  else {
+    return(sad)
+  }
+  }
+  condition(7);
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -58,11 +68,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a, b){
+    return a*b;
   }
 
-
+console.log(multiply(8,4))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -73,11 +83,9 @@ Do the following:
    2. Use the received value to calculate the age in dog years (1 human year is equal to 7 dog years)
    3. Return the newly calculated age
 */
-
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age)= 7{
+  let humanYear = 
 }
-
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -127,7 +135,7 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 
-function game(/*add your code here*/){
+function game( "rock", "paper", or "scissors"){
     /*add your code here*/
 }
   
@@ -194,8 +202,14 @@ Using the grade function below do the following:
    below 60 = F
 */
   
-function grade(/*add your code here*/){
+function grade(i = 100){
     /*add your code here*/
+    if(90-100 === A){console.log('A');}
+    else if(80-89 === B){console.log('B');}
+    else if(70-79 === C){console.log('C');}
+    else if(60-69 === D){console.log('D');}
+    else if(60 > F){console.log('F');}
+    return(A);
   }
   
   
