@@ -83,9 +83,6 @@ Do the following:
    2. Use the received value to calculate the age in dog years (1 human year is equal to 7 dog years)
    3. Return the newly calculated age
 */
-function dogYears(age)= 7{
-  let humanYear = 
-}
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -135,7 +132,7 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 
-function game( "rock", "paper", or "scissors"){
+function game( ){
     /*add your code here*/
 }
   
@@ -202,15 +199,26 @@ Using the grade function below do the following:
    below 60 = F
 */
   
-function grade(i = 100){
+function grade(score){
     /*add your code here*/
-    if(90-100 === A){console.log('A');}
-    else if(80-89 === B){console.log('B');}
-    else if(70-79 === C){console.log('C');}
-    else if(60-69 === D){console.log('D');}
-    else if(60 > F){console.log('F');}
-    return(A);
+    if(score>= 90){
+      console.log("A");
   }
+  else if(score < 90 && score>= 80){
+      console.log("B");
+  }
+  else if(score < 80 && score>= 70){
+      console.log("C");
+  }
+  else if(score < 70 && score>= 60){
+      console.log("D");
+  }
+  else if(score < 60){
+      console.log("F");
+  }
+  }
+    
+    
   
   
   
